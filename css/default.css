@@ -1,4 +1,172 @@
-a{
-    text-decoration: none;
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* ===== Links ===== */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* ===== Navbar ===== */
+nav.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 0.5rem 1rem;
+}
+
+nav.navbar .navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+nav.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+  padding-left: 0;
+}
+
+nav.navbar .nav-link {
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav.navbar .nav-link:hover,
+nav.navbar .nav-link.active {
+  color: #007bff;
+}
+
+/* Hamburger toggler (mobile) */
+.navbar-toggler {
+  border: none;
+}
+
+/* ===== Container ===== */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-bottom: 60px;
+}
+
+section h1, section h2 {
+  color: #222;
+  margin-bottom: 15px;
+}
+
+section p {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+ul {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 30px 0;
+  color: #777;
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  nav.navbar .navbar-nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Make body a flex container */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Full viewport height */
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Main content should grow to take available space */
+main, .container {
+  flex: 1;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  color: #777;
+  font-size: 0.9rem;
+  background-color: #f1f1f1;
+  border-top: 1px solid #e5e5e5;
+}
+
+
+/* Highlighted project cards */
+.highlight-card {
+  border-left: 5px solid #007bff; /* Blue accent */
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.highlight-card .card-title {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Bubble Sort Canvas container */
+.canvas-container {
+  width: 100%;           /* Full width of the card */
+  max-width: 800px;      /* Optional max width for large screens */
+  height: 400px;         /* Fixed height or adjust as needed */
+  margin: 0 auto;        /* Center horizontally */
+  overflow: hidden;      /* Prevent scrollbars */
+  border: 1px solid #ddd; /* Optional border to match card style */
+  border-radius: 5px;
+}

@@ -2,46 +2,57 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Harrison Ling</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/default.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bubble Sort Visualizer - Harrison Ling</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" integrity="sha512-w1Bktzax55ZbjW5Mqjz8+mKz4KqRjEUU35Dpq/ath29yskKqIGwNIHiFNp03m/OiJWDXvdQ1/g6aV+l4PeVO7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
-<body class="d-flex flex-column min-vh-100">
+<body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">Harrison Ling</a>
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="myneCraft.html">Play MyneCraft</a></li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Harrison Ling</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="myneCraft.html">Play MyneCraft</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            </ul>
-
+  <!-- Main Content -->
+  <main class="container mt-5">
+    <section class="highlight-card mb-4">
+      <h3>Bubble Sort Visualizer</h3>
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <p>
+            This is my take on visualizing the bubble sort. I've loved watching videos on this sort of thing and thought I'd give my own version a go.
+          </p>
+          <div id="bubble-container" class="text-center canvas-container"></div>
         </div>
-    </nav>
-    <main>
-        <div class="container mt-5">
-            <h3>Bubble Sort Visualizer</h3>
-            <div class="card shadow-sm">
-                <div class="card-body">
-                    <p>This is my take on visualizing the bubble sort. I've loved watching videos on this sort of thing and thought I'd give my own version a go.
-                    </p>
-                    <div id = "bubble-container" class = "text-center"></div>
-                </div>
-            </div>
-            <script src ="../js/bubbleSort.js"></script>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer class=" footer mt-auto text-center py-3 bg-light ">
-        <p>Harrison Ling &copy; 2025</p>
-    </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js" integrity="sha512-w1Bktzax55ZbjW5Mqjz8+mKz4KqRjEUU35Dpq/ath29yskKqIGwNIHiFNp03m/OiJWDXvdQ1/g6aV+l4PeVO7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Footer -->
+  <footer>
+    <p>Harrison Ling &copy; 2025</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="../js/bubbleSort.js"></script>
 </body>
-
 </html>

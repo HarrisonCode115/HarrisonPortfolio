@@ -2,90 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Harrison Ling</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/default.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harrison Ling</title>
+  <link href="/css/default.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<body class = "d-flex flex-column min-vh-100">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">Harrison Ling</a>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="myneCraft.html">Play MyneCraft</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <div class="container mt-5">
-            <div class="info-about-projects">
-                <h2>Projects</h2>
-                <p>
-                    Feel free to look at any of the projects, most of them are still being worked on, some more complete
-                    than others.
-                    <br><br>
-                    These are just ideas that have popped into my head or something I thought would be fun to make while
-                    learning something new.
-                </p>
-            </div>
+<body>
 
-            <div class="project-box card bg-light">
-                <div class="card-body">
-                    <h2 class="card-title">AI-Chat</h2>
-                    <p class="card-text">AI Chat brings multiple popular LLM's together into one place.
-                         As we know, different models are good at different things, and sometimes it's quite a pain switching between the different models.
-                        On AI Chat, it is a concept that brings this all together, no constant tab changes and new conversations. Simple, quick change. Currently implemented is OpenAI's Chat GPT and Anthropic's Claude. If you want to see the source code please click <a href="https://github.com/HarrisonCode115/OpenAIAPI">here!</a>
-                    </p>
-                </div>
-            </div>
-            <br>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="../index.html">Harrison Ling</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="myneCraft.html">Play MyneCraft</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-            <div class="project-box card bg-light">
-                <div class="card-body">
-                    <h2 class="card-title">MyneCraft</h2>
-                    <p class="card-text">MyneCraft is a game where you can break and place blocks and explore the world.
-                         The reason for this game, is to learn and improve on my skills using AI IDEs. In this case I made use of Cursor.
-                         In working on this project, I have severely improved my ability to prompt LLMs and provide the correct context to allow it to work at it's best.   
-                          If you want to play it please click <a href = "myneCraft.html">here</a> or use the option on the navigation bar!
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="project-box card bg-light ">
-                <div class="card-body">
-                    <h2 class="card-title">Formula-Tracker</h2>
-                    <p class="card-text">For all you sports fans! Specifically the best sport in the world (controversial I know). Formula tracker is a react based application that I created to learn the basics of react, it's still very much in progress and I'm still learning.
-                        <br>
-                        <br>
-                        I made this application as I found myself commonly looking up the championship standings throughout the year, and I also was looking at past standings to learn more about the sport. It annoyed me that the Formula 1 App did not have this information to hand.
-                        So I decided to solve that problem myself and put it all in one place. It makes use of an API to collect real time data about the current standings. You can view the repository <a href="https://github.com/HarrisonCode115/FormulaTracker">here!</a>
-                    </p>
-                </div>
-            </div>
-            <br>
-            <div class="project-box card bg-light ">
-                <div class="card-body">
-                    <h2 class="card-title">Bubble Sort Visualizer</h2>
-                    <p class="card-text">This is one of my very first projects that I made in Sixth Form. It's made using the p5js library and still is today one of my favourite projects even though it is basic. It's a simple bubble sort algorithm that can be visualized using different height vertical bars.
-                        The algorithm slowly (intentionally slowed down for visibility) sorts all the bars in height order. If you'd like to watch it run, click <a href = "bubbleSort.html">here</a>, if not the repository for that is  <a href = "https://github.com/HarrisonCode115/Bubble-Sort-Visualizer">here!</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="text-center py-3 bg-light mt-5 mt-auto">
-        <p>Harrison Ling &copy; 2025</p>
-    </footer>
+  <main class="container mt-5">
+  <section class="info-about-projects mb-4">
+    <h2>Projects</h2>
+    <p>
+      Feel free to look at any of the projects, most of them are still being worked on, some more complete than others.
+      <br><br>
+      These are just ideas that have popped into my head or something I thought would be fun to make while learning something new.
+    </p>
+  </section>
 
+  <!-- Individual Project Cards -->
+  <section class="project-box card highlight-card mb-4">
+    <div class="card-body">
+      <h3 class="card-title">AI-Chat</h3>
+      <p class="card-text">
+        AI Chat brings multiple popular LLM's together into one place. Different models are good at different things, and sometimes it's quite a pain switching between the different models.
+        On AI Chat, it is a concept that brings this all together, no constant tab changes and new conversations. Simple, quick change. Currently implemented is OpenAI's Chat GPT and Anthropic's Claude.
+        If you want to see the source code please click <a href="https://github.com/HarrisonCode115/OpenAIAPI">here!</a>
+      </p>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <section class="project-box card highlight-card mb-4">
+    <div class="card-body">
+      <h3 class="card-title">MyneCraft</h3>
+      <p class="card-text">
+        MyneCraft is a game where you can break and place blocks and explore the world. The reason for this game is to learn and improve my skills using AI IDEs. I made use of Cursor for this project.
+        If you want to play it please click <a href="myneCraft.html">here</a> or use the option on the navigation bar!
+      </p>
+    </div>
+  </section>
+
+  <section class="project-box card highlight-card mb-4">
+    <div class="card-body">
+      <h3 class="card-title">Formula-Tracker</h3>
+      <p class="card-text">
+        Formula tracker is a React-based application to learn the basics of React. It tracks championship standings in real time using an API.
+        You can view the repository <a href="https://github.com/HarrisonCode115/FormulaTracker">here!</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="project-box card highlight-card mb-4">
+    <div class="card-body">
+      <h3 class="card-title">Bubble Sort Visualizer</h3>
+      <p class="card-text">
+        One of my first projects made in Sixth Form using the p5js library. It's a simple bubble sort algorithm visualizer.
+        If you'd like to watch it run, click <a href="bubbleSort.html">here</a>, or see the repository <a href="https://github.com/HarrisonCode115/Bubble-Sort-Visualizer">here!</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Harrison Ling &copy; 2025</p>
+  </footer>
+
 </body>
-
 </html>
